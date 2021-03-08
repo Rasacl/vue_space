@@ -4,6 +4,9 @@
       <div class="header">
         <Header></Header>
       </div>
+      <div class="mian">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
@@ -18,13 +21,14 @@ export default {
 <style lang="less">
 #app{
   position: relative;
-  z-index: -1;
+  z-index: -2;
   background:
   url(../public/shouye/background.png) no-repeat;
 }
 #app::after{
   content: '';
   position: absolute;
+  z-index: -1;
   bottom: 0;
   top: 343px;
   height: 100%;
