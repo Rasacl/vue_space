@@ -6,6 +6,7 @@ html,body,#app{
     text-decoration: none;
     list-style: none;
 }
+/* 隐藏滚动条 */
 ::-webkit-scrollbar {
     width: 0 !important;
   } 
