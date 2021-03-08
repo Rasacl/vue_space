@@ -6,8 +6,8 @@ import router from './router'
 import store from './store'
 import './assets/gobal.css'
 
-Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.config.productionTip = false
 new Vue({
   router,
   store,
