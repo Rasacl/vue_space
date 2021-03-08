@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Main from '../components/Main.vue'
+import Shou from '../components/Shouye.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: '/main'
+    redirect: '/shou'
   },
   {
-    path: '/main',
-    component: Main
+    path: '/shou',
+    component: Shou
   }
 ]
 
