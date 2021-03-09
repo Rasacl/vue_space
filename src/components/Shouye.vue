@@ -5,8 +5,7 @@
       <el-header>
   <div class="Header-Comtainer">
     <div class="wrap wrap1">
-      <p>🥰</p>
-      <img src="../../public/shouye/bear hug1.png" alt="">
+      <img src="../assets/images/logo.png" alt="">
     </div>
     <div class="line"></div>
     <div class="nav wrap1">
@@ -18,7 +17,7 @@
   <el-menu-item index="1">首页</el-menu-item>
   <el-submenu index="2">
     <template slot="title">困境空间</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
+    <el-menu-item index="2-1">家庭困境空间</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
@@ -216,11 +215,8 @@ export default {
   text-align: center;
   box-sizing: border-box;
   .wrap {
-    p {
-      margin: 0;
-      padding-top: 16px;
-    }
-    padding-bottom: 0px;
+    box-sizing: border-box;
+    padding-top: 16px;
   }
   .line {
     position: absolute;

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Shou from '../components/Shouye.vue'
+import Family from '../components/Family.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/shou',
     component: Shou
+  },
+  {
+    path: '/family',
+    component: Family
   }
 ]
 
