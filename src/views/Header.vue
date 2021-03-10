@@ -8,7 +8,9 @@
     <div class="line"></div>
     <div class="nav">
       <el-menu :default-active="activeIndex" mode="horizontal" background-color="#10141b" active-text-color="#6b63b5" text-color="#fff">
-  <el-menu-item index="1">首页</el-menu-item>
+  <el-menu-item index="1">
+    <router-link to="/shou">首页</router-link>
+  </el-menu-item>
   <el-submenu index="2">
     <template slot="title">困境空间</template>
     <el-menu-item index="2-1">选项1</el-menu-item>
@@ -37,7 +39,7 @@ export default {
   height: 139px;
   .logo{
     height: 79px;
-    background: #242633;
+    // background: #242633;
     position: relative;
     .imgs{
       width: 54px;
@@ -62,7 +64,7 @@ export default {
   .nav{
     box-sizing: border-box;
     height: 60px;
-    background: #10141b;
+    // background: #10141b;
     .el-menu{
       width: 477px;
       margin: 0 auto;

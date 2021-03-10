@@ -22,7 +22,7 @@
         <span>IDENTITY</span>
       </div>
       <div class="photo">
-        <div class="card-img">
+         <div class="card-img" @click="GoParents">
          <div class="img">
             <img src="../assets/images/space/jtkjkj_bg_identity_01.jpg" alt="">
             <div class="cub"></div>
@@ -32,7 +32,7 @@
             <span>PAREPARENTS</span>
           </div>
         </div>
-        <div class="card-img">
+        <div class="card-img" @click="GoChild">
           <div class="img">
             <img src="../assets/images/space/jtkjkj_bg_identity_02.jpg" alt="">
             <div class="cub"></div>
@@ -42,7 +42,7 @@
             <span>OFFSPRING</span>
           </div>
         </div>
-        <div class="card-img">
+        <div class="card-img" @click="GoMarry">
           <div class="img">
             <img src="../assets/images/space/jtkjkj_bg_identity_03.jpg" alt="">
             <div class="cub"></div>
@@ -67,12 +67,30 @@ export default {
   components: {
     Header,
     Footer
+  },
+  methods: {
+    GoParents () {
+      this.$router.push('/cparents')
+    },
+    GoChild () {
+      this.$router.push('/cchild')
+    },
+    GoMarry () {
+      this.$router.push('/cmarry')
+    }
   }
 }
 </script>
 <style lang="less" scoped>
 .family{
   width: 100%;
+    .header /deep/ .head .logo{
+      background: #242633;
+    }
+    .header /deep/ .head .nav{
+      background: #10141b;
+    }
+
   .main{
     .el-carousel--horizontal{
       width: 100%;
@@ -109,6 +127,7 @@ export default {
       padding: 0 30px 0 30px;
       margin-bottom: 120px;
       .card-img{
+        cursor: pointer;
         width: 320px;
         height: 475px;
         text-align: center;

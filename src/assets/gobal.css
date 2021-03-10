@@ -3,8 +3,10 @@ html,body,#app{
     height: 100%;
     margin: 0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
+}
+a{
+  text-decoration: none;
 }
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {

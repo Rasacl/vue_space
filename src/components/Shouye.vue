@@ -3,7 +3,7 @@
     <div>
       <el-container>
       <el-header>
-  <div class="Header-Comtainer">
+  <!-- <div class="Header-Comtainer">
     <div class="wrap wrap1">
       <img src="../assets/images/logo.png" alt="">
     </div>
@@ -26,7 +26,8 @@
   <el-menu-item index="5">困境匹配</el-menu-item>
 </el-menu>
     </div>
-  </div>
+  </div> -->
+  <Header></Header>
   </el-header>
       <el-main>
         <div class="main">
@@ -161,6 +162,7 @@
 </template>
 <script>
 import Footer from '../views/Footer'
+import Header from '../views/Header'
 export default {
   data () {
     return {
@@ -168,7 +170,8 @@ export default {
     }
   },
   components: {
-    Footer
+    Footer,
+    Header
   },
   methods: {
   }
