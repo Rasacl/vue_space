@@ -6,6 +6,14 @@ import All from '../components/All.vue'
 import Cparents from '../views/Cparents.vue'
 import Cchild from '../views/Cchild.vue'
 import Cmarry from '../views/Cmarry.vue'
+import School from '../components/School.vue'
+import AllSchool from '../components/AllSchool.vue'
+import Teacher from '../views/Teacher.vue'
+import Students from '../views/Students.vue'
+import Job from '../components/Job.vue'
+import AllJob from '../components/AllJob.vue'
+import Fersh from '../views/Fersh.vue'
+import Senior from '../views/Senior.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +45,42 @@ const routes = [
       {
         path: '/cmarry',
         component: Cmarry
+      }
+    ]
+  },
+  {
+    path: '/school',
+    component: School
+  },
+  {
+    path: '/allschool',
+    component: AllSchool,
+    children: [
+      {
+        path: '/teacher',
+        component: Teacher
+      },
+      {
+        path: '/students',
+        component: Students
+      }
+    ]
+  },
+  {
+    path: '/job',
+    component: Job
+  },
+  {
+    path: '/alljob',
+    component: AllJob,
+    children: [
+      {
+        path: '/fersh',
+        component: Fersh
+      },
+      {
+        path: '/senior',
+        component: Senior
       }
     ]
   }
