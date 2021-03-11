@@ -14,6 +14,8 @@ import Job from '../components/Job.vue'
 import AllJob from '../components/AllJob.vue'
 import Fersh from '../views/Fersh.vue'
 import Senior from '../views/Senior.vue'
+import Tree from '../components/Tree.vue'
+import FragFind from '../components/FragFind.vue'
 
 Vue.use(VueRouter)
 
@@ -83,6 +85,14 @@ const routes = [
         component: Senior
       }
     ]
+  },
+  {
+    path: '/tree',
+    component: Tree
+  },
+  {
+    path: '/fragfind',
+    component: FragFind
   }
 ]
 // 解决多次点击路由报错

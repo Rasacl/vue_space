@@ -24,7 +24,7 @@
            初入职场新人
            <!-- </router-link> -->
          </el-menu-item>
-        <el-menu-item index="2">
+        <el-menu-item index="2" disabled>
           <!-- <router-link to="/cchild"> -->
           职场老人
           <!-- </router-link> -->
