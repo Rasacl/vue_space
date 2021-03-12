@@ -16,6 +16,9 @@ import Fersh from '../views/Fersh.vue'
 import Senior from '../views/Senior.vue'
 import Tree from '../components/Tree.vue'
 import FragFind from '../components/FragFind.vue'
+import FragNum from '../components/FragNum.vue'
+import FragFinded from '../components/FragFinded.vue'
+import FragYour from '../components/FragYour.vue'
 
 Vue.use(VueRouter)
 
@@ -93,6 +96,18 @@ const routes = [
   {
     path: '/fragfind',
     component: FragFind
+  },
+  {
+    path: '/fragnum',
+    component: FragNum
+  },
+  {
+    path: '/fragfinded',
+    component: FragFinded
+  },
+  {
+    path: '/fragyour',
+    component: FragYour
   }
 ]
 // 解决多次点击路由报错

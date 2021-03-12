@@ -10,12 +10,14 @@ export default {
 </script>
 <style lang="less" scoped>
 .footer{
-  height: 140px;
+  height: 139px;
   box-sizing: border-box;
-  width: 1400px;
+  width: 1398px;
   margin: 0 auto;
   text-align: center;
   font-size: 13px;
   padding-top: 40px;
+  border: 1px solid #000;
+  border-bottom: none;
 }
 </style>

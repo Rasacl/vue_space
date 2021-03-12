@@ -9,30 +9,19 @@
         <img src="../assets/images/background-logo.png" alt="">
       </div>
       <div class="title">
-        <h2>你的碎片在困境空间中漂泊3天没有被发现</h2>
+        <h2>你的碎片在困境空间中漂泊倒计时</h2>
         <span>Your fragments drift in the difficult space and were not found</span>
       </div>
      </div>
      <div class="photo">
        <div class="bottom">
-         <div class="pimg">
-         <div class="imgs">
-           <img src="../assets/images/matching/matching_3.jpg" alt="">
+         <div class="bottom_text">
+           <h2>倒计时</h2>
+           <span>Countdown</span>
          </div>
-         <div class="cub"></div>
-         <div class="text">
-           <h2>继续漂泊</h2>
+         <div class="bottom_num">
+           <h2 class="num">2天24小时29分</h2>
          </div>
-       </div>
-       <div class="pimg">
-         <div class="imgs">
-           <img src="../assets/images/matching/matching_2.jpg" alt="">
-         </div>
-         <div class="cub"></div>
-         <div class="text">
-           <h2>结束漂泊</h2>
-         </div>
-       </div>
        </div>
      </div>
      <div class="footer">
@@ -56,7 +45,7 @@ export default {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background: url(../assets/images/matching/matching_4.jpg) no-repeat;
+  background: url(../assets/images/matching/matching_1.jpg) no-repeat;
   background-size: 100% 100%;
   .main{
     width: 100%;
@@ -85,44 +74,40 @@ export default {
       width: 1100px;
       margin: 60px auto 0;
       text-align: center;
+      height: 565px;
       .bottom{
         display: flex;
         justify-content: space-between;
-        .pimg{
+        .bottom_text{
+          color: #fff;
+          h2{
+            margin: 0;
+            font-weight: normal;
+          }
+          span{
+            font-size: 5px;
+            opacity: .3;
+          }
+        }
+        .bottom_num{
+          width: 530px;
+          height: 400px;
+          background: #fff;
           position: relative;
-          cursor: pointer;
-          .imgs{
-            width: 452px;
-            height: 600px;
-            img{
-              width: 100%;
-              height: 100%;
-            }
-          }
-          .cub{
-            width: 450px;
-            height: 598px;
-            border: 1px solid #303461;
+          .num{
             position: absolute;
-            top: 30px;
-            left: 30px;
-          }
-          .text{
-            position: absolute;
-            bottom: 0px;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-
-            h2{
-              color: #fff;
-              font-weight: normal;
-            }
+            transform: translateX(-50%) translateY(-50%);
+            color: #6666cc;
+            font-size: 37px;
+            margin: 0;
           }
         }
       }
     }
     .footer{
-      margin-top: 60px;
+      // margin-top: 60px;
       width: 100%;
     }
   }
