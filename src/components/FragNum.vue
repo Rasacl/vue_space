@@ -43,14 +43,31 @@ export default {
 <style lang="less" scoped>
 .fragfind{
   width: 100%;
-  height: 100%;
+  // height: 100%;
   box-sizing: border-box;
   background: url(../assets/images/matching/matching_1.jpg) no-repeat;
-  background-size: 100% 100%;
-  .main{
+  background-size: 100% 86%;
+  // background-color: #242633;
+  overflow: hidden;
+  &::after{
+    content: 'dwdd';
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    top: 496px;
+    background: url(../../public/shouye/bg_content.png) no-repeat;
+    overflow: hidden;
+    // background-size: 100% 100%;
+  }
+  .main{
+    width: 100%;
+    // height: 100%;
     padding-top: 40px;
+    position: relative;
+    z-index: 8;
+    overflow: hidden;
     .top{
       // position: relative;
       display: flex;

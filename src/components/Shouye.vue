@@ -1,33 +1,11 @@
 <template>
   <div class="Shou">
-    <div>
       <el-container>
       <el-header>
-  <!-- <div class="Header-Comtainer">
-    <div class="wrap wrap1">
-      <img src="../assets/images/logo.png" alt="">
-    </div>
-    <div class="line"></div>
-    <div class="nav wrap1">
-    <el-menu
-  :default-active="activeIndex"
-  mode="horizontal"
-  background-color="#545c64"
-  text-color="#fff">
-  <el-menu-item index="1">首页</el-menu-item>
-  <el-submenu index="2">
-    <template slot="title">困境空间</template>
-    <el-menu-item index="2-1">家庭困境空间</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-  </el-submenu>
-  <el-menu-item index="3">困境树洞</el-menu-item>
-  <el-menu-item index="4">困境碎片</el-menu-item>
-  <el-menu-item index="5">困境匹配</el-menu-item>
-</el-menu>
-    </div>
-  </div> -->
-  <Header></Header>
+      <div class="header">
+    <!-- <FragHeader></FragHeader> -->
+    <Header></Header>
+      </div>
   </el-header>
       <el-main>
         <div class="main">
@@ -158,11 +136,11 @@
       </el-main>
       </el-container>
     </div>
-  </div>
 </template>
 <script>
 import Footer from '../views/Footer'
 import Header from '../views/Header'
+// import FragHeader from '../views/FragHeader'
 export default {
   data () {
     return {
@@ -172,6 +150,7 @@ export default {
   components: {
     Footer,
     Header
+    // FragHeader
   },
   methods: {
   }
@@ -181,18 +160,19 @@ export default {
 <style lang="less" scoped>
 .Shou{
   width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: -2;
+  // height: 100%;
+  // position: absolute;
+  z-index: 5;
   background:
   url(../../public/shouye/background.png) no-repeat;
+  background-color: #242633;
 }
 .Shou::after{
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: 6;
   bottom: 0;
-  top: 343px;
+  top: 591px;
   height: 100%;
   width: 100%;
   background: url(../../public/shouye/bg_content.png) no-repeat;
@@ -211,46 +191,11 @@ export default {
 .el-header{
   padding: 0;
   height: 153px !important;
-  .Header-Comtainer {
-  width: 1100px;
-  height: 77px;
-  margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
-  .wrap {
-    box-sizing: border-box;
-    padding-top: 16px;
-  }
-  .line {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: rgba(250, 250, 250, 0.2);
-  }
-  .nav{
-    width: 100%;
-  .el-menu{
-    background-color:none;
-    width: 390px;
-    left: 50%;
-    transform: translateX(-50%);
-    .el-menu-item{
-      padding: 0 9px;
-    }
-  }
-   .el-menu--horizontal>.el-menu-item.is-active {
-      border-bottom: 3px solid #8e049b;
-      color: #303133;
-    }
-  .el-menu.el-menu--horizontal{
-    border-bottom: none;
-  }
-  }
-}
 }
 .el-main{
   padding: 0;
+  position: relative;
+  z-index: 8;
   .main{
   width: 100%;
   height: 100%;
@@ -353,7 +298,7 @@ export default {
 }
 .line1{
   height: 1px;
-  background: red;
+   background:rgba(250, 250, 250, .3);
   margin-bottom: 130px;
 }
 .tree{
@@ -374,7 +319,7 @@ export default {
       box-sizing: border-box;
       width: 780px;
       height: 442px;
-      border: 1px solid rgba(221, 27, 27, 0.4);
+      border: 1px solid rgba(250, 250, 250, .3);
       padding-left: 99px;
       padding-top: 77px;
       .topTitle{
