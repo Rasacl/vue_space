@@ -74,7 +74,10 @@ export default {
       background-color: rgba(16, 20, 27, 0)!important;
     }
     .el-menu--horizontal>.el-menu-item{
-        background-color: rgba(16, 20, 27 ,0)
+        background-color: rgba(16, 20, 27 ,0)!important;
+    }
+    &/deep/.el-menu--horizontal>.el-submenu .el-submenu__title{
+      background-color: rgba(16, 20, 27 ,0)!important;
     }
   }
 }

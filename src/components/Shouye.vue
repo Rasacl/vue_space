@@ -289,6 +289,7 @@ export default {
           position: absolute;
           bottom: 0;
           left: 50%;
+          color: #fff;
           transform: translateX(-50%);
           margin: 0 0 20px 0;
       }
@@ -324,6 +325,7 @@ export default {
       padding-top: 77px;
       .topTitle{
         h3{
+          color: #fff;
           font-weight: none;
           font-size: 25px;
           margin: 0 0 20px 0;
@@ -331,12 +333,14 @@ export default {
         span{
           display:block;
           margin-bottom: 50px;
+          color:  rgba(250, 250, 250, .3);
         }
       }
       .loTiltie{
         margin-bottom: 20px;
         p{
           margin: 0 0 14px 0;
+          color:  rgba(250, 250, 250, .3);
         }
       }
       .enter{
@@ -369,10 +373,12 @@ export default {
           font-weight: none;
           font-size: 25px;
           margin: 0 0 20px 0;
+          color: #fff;
         }
         span{
           display:block;
           margin-bottom: 43px;
+          color:  rgba(250, 250, 250, .3);
         }
   }
   .allImg{

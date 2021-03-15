@@ -74,8 +74,15 @@ export default {
       width: 493px;
       margin: 0 auto;
     }
-    .el-menu.el-menu--horizontal{
+   &/deep/.el-menu.el-menu--horizontal{
       border-bottom: none;
+      background-color: rgba(16, 20, 27, 0)!important;
+    }
+    .el-menu--horizontal>.el-menu-item{
+        background-color: rgba(16, 20, 27 ,0)!important;
+    }
+    &/deep/.el-menu--horizontal>.el-submenu .el-submenu__title{
+      background-color: rgba(16, 20, 27 ,0)!important;
     }
   }
 }

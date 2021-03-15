@@ -54,14 +54,28 @@ export default {
 <style lang="less" scoped>
 .fragfind{
   width: 100%;
-  height: 100%;
+  // height: 100%;
   box-sizing: border-box;
   background: url(../assets/images/matching/matching_4.jpg) no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 86%;
+  position: relative;
+  overflow: hidden;
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    top: 496px;
+    background: url(../../public/shouye/bg_content.png) no-repeat;
+  }
   .main{
     width: 100%;
     height: 100%;
     padding-top: 40px;
+    position: relative;
+    z-index: 8;
     .top{
       // position: relative;
       display: flex;

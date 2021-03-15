@@ -17,5 +17,6 @@ export default {
   text-align: center;
   font-size: 13px;
   padding-top: 40px;
+  color:rgba(250, 250, 250, 0.4);
 }
 </style>

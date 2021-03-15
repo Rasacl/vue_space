@@ -17,7 +17,10 @@ export default {
   text-align: center;
   font-size: 13px;
   padding-top: 40px;
-  border: 1px solid #000;
-  border-bottom: none;
+  border-top: 1px solid #505053;
+  color:rgba(250, 250, 250, 0.4);
+  &/deep/a{
+    color: rgba(250, 250, 250, 0.4);
+  }
 }
 </style>
