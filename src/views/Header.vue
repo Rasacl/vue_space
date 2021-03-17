@@ -13,13 +13,25 @@
   </el-menu-item>
   <el-submenu index="2">
     <template slot="title">困境空间</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
+    <el-menu-item index="2-1">
+      <router-link to="/all">家庭困境</router-link>
+    </el-menu-item>
+    <el-menu-item index="2-2">
+      <router-link to="/allschool">校园困境</router-link>
+    </el-menu-item>
+    <el-menu-item index="2-3">
+      <router-link to="/alljob">职场困境</router-link>
+    </el-menu-item>
   </el-submenu>
-  <el-menu-item index="3">困境树洞</el-menu-item>
-  <el-menu-item index="4">困境碎片</el-menu-item>
-  <el-menu-item index="5">困境匹配</el-menu-item>
+  <el-menu-item index="3">
+    <router-link to="/tree">困境树洞</router-link>
+  </el-menu-item>
+  <el-menu-item index="4">
+    <router-link to="/fragyour">困境碎片</router-link>
+  </el-menu-item>
+  <el-menu-item index="5">
+    <router-link to="/family">困境匹配</router-link>
+  </el-menu-item>
 </el-menu>
     </div>
   </div>
@@ -37,6 +49,9 @@ export default {
 .head{
   width: 100%;
   height: 139px;
+  a{
+    color: #fff;
+  }
   .logo{
     height: 79px;
     // background: #242633;
